@@ -62,7 +62,7 @@ jobs:
       - name: Install deps
         working-directory: ml-service
         run: |
-          pip install --no-cache-dir fastapi uvicorn pydantic numpy scikit-learn pytest httpx
+          pip install --no-cache-dir -r requirements.txt pytest
 
       - name: Run tests
         working-directory: ml-service
